@@ -179,8 +179,13 @@
 
         embedded_svc.settings.fallbackRouting = ['5738e000000wlXB','5738e000000wlXC']; //An array of button IDs, user IDs, or userId_buttonId -->
 
-        embedded_svc.settings.extraPrechatFormDetails = [{"label":"Email", "transcriptFields": ["Email__c"]}, { "value":window.location.href, "transcriptFields": ["Chat_Referring_URL__c"]}, {"label":"What would you like to talk to us about?", "transcriptFields":["What_would_you_like_to_talk_to_us_about__c"]}];
-        //embedded_svc.settings.extraPrechatFormDetails = [{"label":"Email", "transcriptFields": ["Email__c"]}, { "value":window.location.href, "transcriptFields": ["Chat_Referring_URL__c"]}];
+        embedded_svc.settings.extraPrechatFormDetails = [
+            {"label": "Email", "transcriptFields": ["Email__c"]},
+            {"value": window.location.href, "transcriptFields": ["Chat_Referring_URL__c"]},
+            {"label": "What would you like to talk to us about?","transcriptFields": ["What_would_you_like_to_talk_to_us_about__c"]},
+            {"label": "Department", "value": "MintSoft", "transcriptFields": ["TAG_com_Department__c"]}
+        ];
+        
         //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
         //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
